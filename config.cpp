@@ -7,6 +7,10 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{  
+			"DZ_Data",
+			"M14Suppressor",
+			"TTCSuppressor",
+			"TTC_AKMod"
 		};
 	};
 };
@@ -20,7 +24,7 @@ class CfgMods
 		hideName=1;
 		hidePicture=1;
 		name="bl_TTC_weaker_Suppressors";
-		credits="Morty for Mortys Weapons"; 
+		credits="Morty for Mortys Weapons - read the ReadMe.txt"; 
 		author="BoomLay";
 		authorID="76561198001453933";  
 		version="1.0";
@@ -39,7 +43,10 @@ class CfgMods
 class CfgVehicles
 {
 	class ItemSuppressor;
-	class TTC_M14Suppressor_BASE: ItemSuppressor;
+	class TTC_M14Suppressor_BASE: ItemSuppressor
+	{
+
+	};
 	class TTC_M14Suppressor: TTC_M14Suppressor_BASE
 	{
 		noiseShootModifier=-0.95;
@@ -50,12 +57,15 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=8;
-				}
-			}
-		}
+				};
+			};
+		};
 	};
 
-	class TTC_Universal_Suppressor_BASE: ItemSuppressor;
+	class TTC_Universal_Suppressor_BASE: ItemSuppressor
+	{
+
+	};
 	class TTC_Universal_Suppressor_BLACK: TTC_Universal_Suppressor_BASE
 	{
 		noiseShootModifier=-0.95;
@@ -66,9 +76,9 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=8;
-				}
-			}
-		}
+				};
+			};
+		};
 	};
 
 	class TTC_Universal_Suppressor_TAVOR: TTC_Universal_Suppressor_BASE
@@ -81,9 +91,9 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=8;
-				}
-			}
-		}
+				};
+			};
+		};
 	};
 
 	class TTC_Universal_Suppressor_TAVOR: TTC_Universal_Suppressor_BASE
@@ -96,9 +106,9 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=8;
-				}
-			}
-		}
+				};
+			};
+		};
 	};
 
 	class TTC_AKMod_Suppressor: ItemSuppressor
@@ -111,11 +121,10 @@ class CfgVehicles
 				class Health
 				{
 					hitpoints=20;
-				}
-			}
-		}
+				};
+			};
+		};
 	};
-
 };
 
 
