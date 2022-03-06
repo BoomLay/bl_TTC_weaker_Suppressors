@@ -10,6 +10,9 @@ class CfgPatches
 			"DZ_Data",
 			"M14Suppressor",
 			"TTCSuppressor",
+			"TTC_MCX",
+			"TTC_Pistol_Parts",
+			"TTC_Attachements_DMR",
 			"TTC_AKMod"
 		};
 	};
@@ -120,7 +123,52 @@ class CfgVehicles
 			{
 				class Health
 				{
-					hitpoints=20;
+					hitpoints=8;
+				};
+			};
+		};
+	};
+
+	class TTC_MCX_Spear_Suppressor: ItemSuppressor
+	{
+		noiseShootModifier=-0.95;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=8;
+				};
+			};
+		};
+	};
+
+	class TTC_PistolSuppressor: ItemSuppressor
+	{
+		noiseShootModifier=-0.95;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=8;
+				};
+			};
+		};
+	};
+
+	class TTC_DMR_Suppressor: ItemSuppressor
+	{
+		noiseShootModifier=-0.95;
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints=8;
 				};
 			};
 		};
