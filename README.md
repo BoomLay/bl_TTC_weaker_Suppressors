@@ -13,5 +13,5 @@ Honeybadger Supp has still the same values... because c'mon it's a Honeybadger, 
 Feel free to unpack/repack this mod or whatever you like to do, but give credits to Morty.
 And please keep in Mind, that this Mod requires Mortys Weapons. Your server won't start without the "Parent-Mod".
 
-Mortys Weapons (by Morty)
+# Mortys Weapons (by Morty)
 https://steamcommunity.com/sharedfiles/filedetails/?id=2155726353&searchtext=morty
